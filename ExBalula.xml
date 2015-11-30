@@ -1,37 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="-13" y="23">
-    <next>
-      <block type="movement_right" id="19">
-        <next>
-          <block type="controls_if" id="2" inline="false">
-            <mutation elseif="1"></mutation>
-            <value name="IF0">
-              <block type="sensor_object" id="3">
-                <field name="OBJECT">LEFTFRONT</field>
-              </block>
-            </value>
-            <statement name="DO0">
-              <block type="movement_right" id="5">
-                <next>
-                  <block type="movement_forward" id="6"></block>
-                </next>
-              </block>
-            </statement>
-            <value name="IF1">
-              <block type="sensor_object" id="7">
-                <field name="OBJECT">RIGHTFRONT</field>
-              </block>
-            </value>
-            <statement name="DO1">
-              <block type="movement_left" id="8">
-                <next>
-                  <block type="movement_forward" id="9"></block>
-                </next>
-              </block>
-            </statement>
-          </block>
-        </next>
+  <block type="movement_rightmotor" id="35" inline="true" x="-5" y="9">
+    <value name="MOVRIGHT">
+      <block type="math_number" id="45">
+        <field name="NUM">76676</field>
       </block>
-    </next>
+    </value>
   </block>
 </xml>
