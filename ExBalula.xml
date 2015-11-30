@@ -19,6 +19,9 @@
         <statement name="DO1">
           <block type="movement_left" id="204"></block>
         </statement>
+        <next>
+          <block type="movement_forward" id="214"></block>
+        </next>
       </block>
     </next>
   </block>
