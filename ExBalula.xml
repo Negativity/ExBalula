@@ -9,7 +9,11 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="152"></block>
+          <block type="movement_right" id="152">
+            <next>
+              <block type="movement_forward" id="214"></block>
+            </next>
+          </block>
         </statement>
         <value name="IF1">
           <block type="sensor_object" id="194">
@@ -17,11 +21,12 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_left" id="204"></block>
+          <block type="movement_left" id="204">
+            <next>
+              <block type="movement_forward" id="224"></block>
+            </next>
+          </block>
         </statement>
-        <next>
-          <block type="movement_forward" id="214"></block>
-        </next>
       </block>
     </next>
   </block>
