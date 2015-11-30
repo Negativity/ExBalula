@@ -2,7 +2,7 @@
   <block type="movement_rightmotor" id="35" inline="true" x="-5" y="9">
     <value name="MOVRIGHT">
       <block type="math_number" id="45">
-        <field name="NUM">76676</field>
+        <field name="NUM">360</field>
       </block>
     </value>
   </block>
