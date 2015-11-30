@@ -1,39 +1,39 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_right" id="19" x="322" y="67"></block>
-  <block type="movement_forward" id="1" disabled="true" x="-21" y="177">
+  <block type="movement_forward" id="1" x="-21" y="177">
     <next>
-      <block type="controls_if" id="2" inline="false">
-        <mutation elseif="1"></mutation>
-        <value name="IF0">
-          <block type="sensor_object" id="3">
-            <field name="OBJECT">LEFTFRONT</field>
-          </block>
-        </value>
-        <statement name="DO0">
-          <block type="led_select" id="4" inline="true">
-            <field name="ACTION">ON</field>
-            <next>
-              <block type="movement_right" id="5">
-                <next>
-                  <block type="movement_forward" id="6"></block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </statement>
-        <value name="IF1">
-          <block type="sensor_object" id="7">
-            <field name="OBJECT">RIGHTFRONT</field>
-          </block>
-        </value>
-        <statement name="DO1">
-          <block type="movement_left" id="8">
-            <next>
-              <block type="movement_forward" id="9"></block>
-            </next>
-          </block>
-        </statement>
-      </block>
+      <block type="movement_right" id="19"></block>
     </next>
+  </block>
+  <block type="controls_if" id="2" inline="false" x="542" y="161">
+    <mutation elseif="1"></mutation>
+    <value name="IF0">
+      <block type="sensor_object" id="3">
+        <field name="OBJECT">LEFTFRONT</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="led_select" id="4" inline="true">
+        <field name="ACTION">ON</field>
+        <next>
+          <block type="movement_right" id="5">
+            <next>
+              <block type="movement_forward" id="6"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="IF1">
+      <block type="sensor_object" id="7">
+        <field name="OBJECT">RIGHTFRONT</field>
+      </block>
+    </value>
+    <statement name="DO1">
+      <block type="movement_left" id="8">
+        <next>
+          <block type="movement_forward" id="9"></block>
+        </next>
+      </block>
+    </statement>
   </block>
 </xml>
