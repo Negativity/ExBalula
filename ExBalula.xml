@@ -11,14 +11,9 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="led_select" id="4" inline="true">
-                <field name="ACTION">ON</field>
+              <block type="movement_right" id="5">
                 <next>
-                  <block type="movement_right" id="5">
-                    <next>
-                      <block type="movement_forward" id="6"></block>
-                    </next>
-                  </block>
+                  <block type="movement_forward" id="6"></block>
                 </next>
               </block>
             </statement>
