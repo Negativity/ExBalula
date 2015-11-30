@@ -1,0 +1,10 @@
+{
+    "name": "ExBalula",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "ExBalula.xml",
+    "author": "Negativity",
+    "minimum_firmware_version": 42
+}
