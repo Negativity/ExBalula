@@ -1,18 +1,18 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="84" x="-25" y="-9">
+  <block type="movement_forward" id="1" x="-25" y="-9">
     <next>
-      <block type="controls_if" id="102" inline="false">
+      <block type="controls_if" id="2" inline="false">
         <mutation else="1"></mutation>
         <value name="IF0">
-          <block type="sensor_object" id="120">
+          <block type="sensor_object" id="3">
             <field name="OBJECT">LEFTFRONT</field>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="157"></block>
+          <block type="movement_right" id="4"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="158"></block>
+          <block type="movement_forward" id="5"></block>
         </statement>
       </block>
     </next>
